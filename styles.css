@@ -1,0 +1,57 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background: white;
+    color: black;
+}
+
+/* top navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+/* layout */
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+/* big titles */
+.titles h1 {
+    font-size: 48px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* underline effect */
+.titles span {
+    display: inline-block;
+    border-bottom: 4px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* sidebar text */
+.sidebar {
+    font-size: 14px;
+    color: gray;
+    line-height: 1.6;
+}
+
+/* main text */
+.text {
+    grid-column: 1 / 2;
+    margin-top: 40px;
+}
+
