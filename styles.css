@@ -7,8 +7,8 @@
 
 body {
     font-family: serif;
-    background: white;
-    color: black;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 /* top navigation */
@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     padding: 20px 40px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 /* layout */
@@ -25,33 +26,73 @@ main {
     grid-template-columns: 2fr 1fr;
     gap: 40px;
     padding: 40px;
+        width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none !important;
+    max-width: 1400px !important;
 }
 
 /* big titles */
 .titles h1 {
     font-size: 48px;
-    font-style: italic;
     line-height: 1.4;
+    font-size: 90px;
+    font-family: "Kapakana", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+   
 }
+  
+
 
 /* underline effect */
 .titles span {
     display: inline-block;
-    border-bottom: 4px solid black;
     padding-bottom: 5px;
     margin-bottom: 10px;
+     text-decoration: underline;
+    
 }
 
 /* sidebar text */
 .sidebar {
-    font-size: 14px;
-    color: gray;
+    font-size: 18px;
+    color: rgb(255, 251, 251);
     line-height: 1.6;
 }
 
 /* main text */
 .text {
     grid-column: 1 / 2;
+    font-size: 25px;
     margin-top: 40px;
+
+
 }
+
+
+a {
+  text-decoration: none;
+  color: white;   /* default color */
+}
+
+a:hover {
+  color: #008d4992;
+  cursor: pointer;
+  text-indent: 20px;
+  transition: 1s ease-in-out;
+  font-size: 20px;
+  font-style: italic;
+}
+
+a:visited {
+  color: rgb(204, 204, 204);
+}
+
+
+
 
