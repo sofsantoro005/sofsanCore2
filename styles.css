@@ -18,8 +18,36 @@ header {
     padding: 20px 40px;
     font-weight: bold;
     font-size: 20px;
+    justify-content: center;
+  
 }
 
+
+
+.nav-center1, .nav-center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-container {
+    display: flex;      
+    gap: 40px;          
+}
+
+ 
+
+.nav-center1:hover, .nav-center2:hover {
+    
+    cursor: pointer;
+    text-indent: 20px;
+    transition: 1s ease-in-out;
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: underline;
+
+}
 /* layout */
 main {
     display: grid;
@@ -44,17 +72,21 @@ main {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    padding: 20px 0;
+   
    
 }
+
+
   
 
 
 /* underline effect */
 .titles span {
     display: inline-block;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-     text-decoration: underline;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    text-decoration: underline;
     
 }
 
@@ -76,7 +108,7 @@ main {
 
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;   /* default color */
 }
 
@@ -93,6 +125,43 @@ a:visited {
   color: rgb(204, 204, 204);
 }
 
+.numbers {
+    font-weight: bold;
+    color: #cecece;
+    margin-right: 10px;
+}
 
 
 
+p {
+      margin-bottom: 1em; 
+  margin-top: 1em;
+}
+
+.my-box {
+    border: 2px solid rgb(61, 61, 61);
+    padding: 20px;
+    margin-bottom: 20px;
+    outline: 2px solid black;
+    outline-offset: 5px;  
+}
+
+.hover-item {
+  position: relative;
+  cursor: pointer;
+}
+
+/* hide image */
+.hover-item img {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  margin-top: 10px;
+}
+
+/* show image on hover */
+.hover-item:hover img {
+  display: block;
+}
